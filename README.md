@@ -6,7 +6,7 @@
 
 This test is part of our hiring process for Fullstack/GraphQL developers. [Apply now](https://jobs.livestorm.co/)
 
-Be sure to read all of the instructions carefully and follow the guidelines below. 
+Be sure to read all of the instructions carefully and follow the guidelines below. This test should take you between 4 and 8 hours depending on your experience.
 
 ## What you need to do
 
