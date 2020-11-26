@@ -6,11 +6,11 @@
 
 This test is part of our hiring process for Fullstack/GraphQL developers. [Apply now](https://jobs.livestorm.co/)
 
-Be sure to read all of the instructions carefully and follow the guidelines below. This test should take you between 4 and 8 hours depending on your experience.
+Be sure to read all of the instructions carefully and follow the guidelines below. 
 
 ## What you need to do
 
-Build a GraphQL API on a Node.js server and a small Vue.js app that uses this API. The application displays a web page with the folowwing features:
+Build a GraphQL API on a Node.js server and a small Vue.js app that uses this API. The application displays a web page with the following features:
 
 - List or table of events sorted by creation date descending with a pagination every 10 items.
 - Every event displays:
@@ -24,7 +24,6 @@ Build a GraphQL API on a Node.js server and a small Vue.js app that uses this AP
 - A `Load more` allows loading the next 10 events.
 - A simple form to create a new event (the title is enough, the rest can be hardcoded).
 - A select (or buttons...) can switch between displaying all events or filter them for a specific status (see below).
-- New events should be received in realtime if the app is open on another tab/window.
 
 An event status can be:
 - `draft` if the event is not published,
@@ -44,6 +43,7 @@ A few technologies/libraries **must be used** to build the app:
 - Apollo Client
 - [vue-apollo](https://vue-apollo.netlify.com/)
 - graphql-tag (`gql`)
+- Coverage doesn't need to be 100% but your code **should be tested**
 
 **Backend:**
 
@@ -54,7 +54,7 @@ A few technologies/libraries **must be used** to build the app:
 
 ### Other constraints
 
-- You should use the included Postgres import script (`db.sql`).
+- You should use the included Postgres import script (`./generate-sql.js`).
 - You can't modify the Database (such as new indexes/views/etc.).
 - You can't use any ORM or Query builder: use raw SQL in the Apollo server.
 - The SQL requests should be as fast as possible (~1 or 2 seconds max).
@@ -78,6 +78,5 @@ When you feel you are done, send us by email a link to a **private GitHub reposi
 ## Tips
 
 - **Design/style of the app is not important, focus on building and using the GraphQL API and the SQL queries.**
-- Don't hesitate to use Vue CLI to create the frontend app.
-- Don't hesitate to use as many GraphQL and Apollo Client/Server features as possible.
-- Got questions? Contact us! (No penalties for asking questions wink)
+- Feel free to use any library you want
+- Got questions? Contact us! (No penalties for asking questions 😉)

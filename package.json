@@ -1,0 +1,19 @@
+{
+    "name": "hiring-fullstack-test",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Guillaume Chau",
+    "license": "Private",
+    "scripts": {
+      "generate": "node ./generate-sql.js"
+    },
+    "private": true,
+    "workspaces": [
+      "packages/*"
+    ],
+    "dependencies": {
+      "faker": "^4.1.0",
+      "fs-extra": "^8.1.0",
+      "uuid": "^3.3.2"
+    }
+  }
