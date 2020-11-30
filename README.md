@@ -50,7 +50,7 @@ A few technologies/libraries **must be used** to build the app:
 - Language: Typescript
 - Node.js
 - Apollo Server
-- PostgresQL
+- PostgreSQL
 
 ### Other constraints
 
