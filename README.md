@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="400" height="140" src="https://svgshare.com/i/Qo0.svg">
+  <img width="400" height="140" src="https://cdn.livestorm.co/assets/logo-livestorm-dark-2922e64c334d4430dafcd0f1da9e6171d41e8da308e4a31933b52caa36b33539.svg">
 </p>
 
 # Livestorm Fullstack GraphQL Hiring Test
