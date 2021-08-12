@@ -22,8 +22,9 @@ Build a GraphQL API on a Node.js server and a small Vue.js app that uses this AP
   - registered people count (excluding hosts) for all the event sessions,
   - total messages count of all the event sessions.
 - A `Load more` allows loading the next 10 events.
-- A simple form to create a new event (the title is enough, the rest can be hardcoded).
 - A select (or buttons...) can switch between displaying all events or filter them for a specific status (see below).
+- A simple form to create a new event (the title is enough, the rest can be hardcoded).
+- The added events must be received in real time if the app is opened in another tab/window.
 
 An event status can be:
 - `draft` if the event is not published,
@@ -43,7 +44,6 @@ A few technologies/libraries **must be used** to build the app:
 - Apollo Client
 - [vue-apollo](https://vue-apollo.netlify.com/)
 - graphql-tag (`gql`)
-- Coverage doesn't need to be 100% but your code **should be tested**
 
 **Backend:**
 
