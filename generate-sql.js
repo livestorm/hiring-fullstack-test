@@ -16,13 +16,13 @@ const maxMessageCount = 200
 const file = path.resolve(process.cwd(), process.argv[2] || './db.sql')
 const stream = fs.createWriteStream(file)
 
-function progress (text, icon) {
+function progress(text, icon) {
   process.stdout.clearLine()
   process.stdout.cursorTo(0)
   process.stdout.write(`${icon || `⚙️`}  ${text}`)
 }
 
-function format (value) {
+function format(value) {
   if (typeof value === 'string') {
     value = value.replace(/'/g, `''`)
   }
@@ -39,6 +39,11 @@ function insert(...values) {
   stream.write(`(
   ${values.map(v => format(v)).join(`,\n  `)}
 )`)
+}
+
+// random user avatar
+function randomAvatar() {
+  return `https://randomuser.me/api/portraits/${faker.random.boolean() ? 'women' : 'men'}/${faker.random.number({ min: 0, max: 99 })}.jpg`
 }
 
 // Clean
@@ -75,7 +80,7 @@ for (let i = 0; i < userCount; i++) {
     id,
     faker.name.firstName(),
     faker.name.lastName(),
-    faker.image.avatar(),
+    randomAvatar(),
     faker.date.past(),
   )
   if (i < userCount - 1) {
